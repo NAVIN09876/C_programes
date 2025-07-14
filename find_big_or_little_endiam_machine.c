@@ -8,7 +8,7 @@ int main()
         printf("Your Machine is Little Endian Machine\n");
     }
     else{
-        printf("Your Machine is Big  Endian Machine\n");
+        printf("Your Machine is Big  Endian Machine \n");
     }
 
 }
