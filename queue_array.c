@@ -15,6 +15,7 @@ void enqueue(int value) {
         }
         queue[rare] = value;
     }
+
 }
 
 void dequeue() {
