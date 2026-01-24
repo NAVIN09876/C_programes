@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<string.h>
-struct emoloyee
+
+struct employee
 {
     int id;
     float salary;
@@ -9,18 +10,17 @@ struct emoloyee
 
 int main()
 {
-	printf("enter employe ID :");
-	scanf("%d",&e1.id);
+    printf("Enter employee ID: ");
+    scanf("%d", &e1.id);
 
-	printf("enter employe salary :");
-	scanf("%f",&e1.salary);
+    printf("Enter employee salary: ");
+    scanf("%f", &e1.salary);
 
-	printf("Etter name:");
+    printf("Enter name: ");
+    scanf("%s", e1.name);
 
-	scanf("%s",&e1.name);
+    printf("Name = %s\nID = %d\nSalary = %.3f\n",
+           e1.name, e1.id, e1.salary);
 
-
-
-	printf("Name = %s \n ID = %d \nSalary = %.3f",e1.name,e1.name,e1.id,e1.salary);
-
+    return 0;
 }
