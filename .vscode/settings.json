@@ -1,1 +1,6 @@
-{}
+{
+    "sonarlint.connectedMode.project": {
+        "connectionId": "navin09876",
+        "projectKey": "NAVIN09876_C_programes"
+    }
+}

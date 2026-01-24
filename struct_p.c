@@ -9,10 +9,6 @@ struct emoloyee
 
 
 
-void hike_salary()
-{
-
-}
 
 
 int main()
@@ -29,6 +25,6 @@ int main()
 
 
 
-	printf("Name = %s\n Company = %s \n ID = %d \ Salary = %.3f",e1.name,e1.company,e1.name,e1.id,e1.salary);
+	printf("Name = %s \n ID = %d \nSalary = %.3f",e1.name,e1.name,e1.id,e1.salary);
 
 }
