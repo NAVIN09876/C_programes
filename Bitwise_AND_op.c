@@ -1,4 +1,9 @@
 #include<stdio.h>
+
+int bitwiseAnd(int a, int b) {
+    return a & b;
+}
+
 int main()  
 {
     /*64 32 16 8 4 2 1
@@ -11,6 +16,6 @@ int main()
 
     int x=5; 
     int y=6;
-    int z=x&y;
+    int z=bitwiseAnd(x, y);
     printf("%d",z);
 }

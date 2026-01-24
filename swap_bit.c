@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<unistd.h>
 int main()
 {
     int x,p1,p2;
@@ -16,4 +17,5 @@ int main()
     }
     printf("After swaping the bits in x value is :%d",x);
 
+    sleep(100);
 }

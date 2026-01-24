@@ -1,0 +1,257 @@
+[1mArrays.c:5:22: [31mstyle:[39m Variable 'int_array' is assigned a value that is never used. [unreadVariable][0m
+    int int_array[10]={1,2,3,4,5,6,7,8,9,10};
+                     ^
+[1mArrays.c:6:22: [31mstyle:[39m Variable 'char_arry' is assigned a value that is never used. [unreadVariable][0m
+    char char_arry[6]= {'N','A','V','E','E','N','0/'};
+                     ^
+[1mArrays.c:7:26: [31mstyle:[39m Variable 'float_array' is assigned a value that is never used. [unreadVariable][0m
+    float float_array[5] ={1.1,2.2,3.3,4.4,5.5};
+                         ^
+[1mArrays.c:8:27: [31mstyle:[39m Variable 'double_array' is assigned a value that is never used. [unreadVariable][0m
+    double double_array[4]={1.2345,2.3456,3.4567,4.5678,};
+                          ^
+[1mArrays.c:10:23: [31mstyle:[39m Variable 'int_arr1' is assigned a value that is never used. [unreadVariable][0m
+    int int_arr1[2][2]={{1,2,},{3,4}};
+                      ^
+[1mArrays.c:11:26: [31mstyle:[39m Variable 'char_arry1' is assigned a value that is never used. [unreadVariable][0m
+    char char_arry1[6][6]= {{'N','A','V','E','E','N','0/'},
+                         ^
+[1mDouble_linked_list_insert_delete.c:86:10: [31mstyle:[39m Variable '*head' is reassigned a value before the old one has been used. [redundantAssignment][0m
+    *head=newnode;
+         ^
+[1mDouble_linked_list_insert_delete.c:79:14: [2mnote:[0m *head is assigned
+        *head=newnode;
+             ^
+[1mDouble_linked_list_insert_delete.c:86:10: [2mnote:[0m *head is overwritten
+    *head=newnode;
+         ^
+[1mDouble_linled_list.c:21:13: [31mwarning:[39m Uninitialized variables: head.prev, head.data, head.next [uninitvar][0m
+        if (head==NULL)
+            ^
+[1mDouble_linled_list.c:14:19: [2mnote:[0m Assuming condition is false
+        if(newnode==NULL)
+                  ^
+[1mDouble_linled_list.c:21:13: [2mnote:[0m Uninitialized variables: head.prev, head.data, head.next
+        if (head==NULL)
+            ^
+[1mHelloWorld.c:10:5: [31mwarning:[39m scanf() without field width limits can crash with huge input data. [invalidscanf][0m
+    scanf("%[^\n]",str);
+    ^
+[1mLogical_not_op.c:5:9: [31mstyle:[39m Condition '!n' is always false [knownConditionTrueFalse][0m
+     if(!n)
+        ^
+[1mLogical_not_op.c:4:12: [2mnote:[0m Assignment 'n=1', assigned value is 1
+     int n=1;
+           ^
+[1mLogical_not_op.c:5:9: [2mnote:[0m Condition '!n' is always false
+     if(!n)
+        ^
+[1mMaximum_and_Minimum_Element_in _Array.c:3:35: [31mstyle:[39m Parameter 'arr' can be declared as const array [constParameter][0m
+int find_max_and_least_number(int arr[],int size)
+                                  ^
+[1mNode_insert_delete.c:102:18: [31mstyle:[39m Unused variable: temp [unusedVariable][0m
+    struct node *temp;
+                 ^
+[1mNode_insert_delete.c:133:9: [31mstyle:[39m Unused variable: value [unusedVariable][0m
+    int value;
+        ^
+[1mPrint_the_reverse_of_a_number.c:10:9: [31mstyle:[39m The scope of the variable 'digit' can be reduced. [variableScope][0m
+    int digit=0;
+        ^
+[1mPrint_the_reverse_of_a_number.c:10:14: [31mstyle:[39m Variable 'digit' is assigned a value that is never used. [unreadVariable][0m
+    int digit=0;
+             ^
+[1marrays (1).c:781:64: [31merror:[39m Unmatched ')'. Configuration: ''. [syntaxError][0m
+3. Finding 1st lowest and second lowest elements in given array)
+                                                               ^
+[1mbinary_representation_of_a_number.c:9:20: [31mportability:[39m Shifting signed 32-bit value by 31 bits is implementation-defined behaviour [shiftTooManyBitsSigned][0m
+        int bit = x>>i;
+                   ^
+[1mbinary_representation_of_a_number.c:7:16: [2mnote:[0m Assignment 'i=31', assigned value is 31
+    for (int i=31;i>=0;i--)
+               ^
+[1mbinary_representation_of_a_number.c:9:20: [2mnote:[0m Shift
+        int bit = x>>i;
+                   ^
+[1mbitwise_operators.c:123:6: [31merror:[39m No pair for character ('). Can't process file. File is either invalid or unicode, which is currently not supported. [syntaxError][0m
+x | x'  = 1
+     ^
+[1mcall_by_referance.c:13:5: [31merror:[39m Found an exit path from function with non-void return type that has missing return statement [missingReturn][0m
+    printf("x value in function :%d\n",*x);
+    ^
+[1mcall_by_value.c:13:5: [31merror:[39m Found an exit path from function with non-void return type that has missing return statement [missingReturn][0m
+    printf("x value in function :%d\n",x);
+    ^
+[1mcircular_single_linked_list.c:22:12: [31mwarning:[39m Uninitialized variables: head.data, head.next [uninitvar][0m
+        if(head==NULL)
+           ^
+[1mcircular_single_linked_list.c:15:19: [2mnote:[0m Assuming condition is false
+        if(newnode==NULL)
+                  ^
+[1mcircular_single_linked_list.c:22:12: [2mnote:[0m Uninitialized variables: head.data, head.next
+        if(head==NULL)
+           ^
+[1mcircular_single_linked_list.c:9:10: [31mstyle:[39m Variable 'i' is assigned a value that is never used. [unreadVariable][0m
+    int i=1;
+         ^
+[1mcircular_single_linked_list_insert_delete.c:140:9: [31merror:[39m Memory leak: newnode [memleak][0m
+        return;
+        ^
+[1mclient_socket_programe.c:27:14: [31mstyle:[39m The comparison 'sock < 0' is always false. [knownConditionTrueFalse][0m
+    if (sock < 0) {
+             ^
+[1mclient_socket_programe.c:12:16: [2mnote:[0m 'sock' is assigned value '0' here.
+    int sock = 0;//It will hold the return value from socket() and be used in all client operations.
+               ^
+[1mclient_socket_programe.c:27:14: [2mnote:[0m The comparison 'sock < 0' is always false.
+    if (sock < 0) {
+             ^
+[1mfabbinoc_series.c:11:19: [31mstyle:[39m The scope of the variable 'p3' can be reduced. [variableScope][0m
+    int p1=0,p2=1,p3;
+                  ^
+[1mfind_big_or_little_endiam_machine.c:6:8: [31mstyle:[39m Condition '*ptr' is always true [knownConditionTrueFalse][0m
+    if(*ptr)
+       ^
+[1mfind_big_or_little_endiam_machine.c:4:11: [2mnote:[0m Assignment 'x=1', assigned value is 1
+    int x=1;
+          ^
+[1mfind_big_or_little_endiam_machine.c:6:8: [2mnote:[0m Condition '*ptr' is always true
+    if(*ptr)
+       ^
+[1minserction_in_array.c:19:16: [31merror:[39m Array 'arr[9]' accessed at index 9, which is out of bounds. [arrayIndexOutOfBounds][0m
+            arr[i+1]=arr[i];
+               ^
+[1minserction_in_array.c:5:25: [2mnote:[0m Assignment 'size=sizeof(arr)/sizeof(arr[0])', assigned value is 9
+    int size=sizeof(arr)/sizeof(arr[0]);
+                        ^
+[1minserction_in_array.c:17:23: [2mnote:[0m Assignment 'i=size-1', assigned value is 8
+        for(int i=size-1;i>=position-1;i--)
+                      ^
+[1minserction_in_array.c:19:16: [2mnote:[0m Array index out of bounds
+            arr[i+1]=arr[i];
+               ^
+[1minserction_in_array.c:27:25: [31merror:[39m Array 'arr[9]' accessed at index 9, which is out of bounds. [arrayIndexOutOfBounds][0m
+        printf("%d ",arr[i]);
+                        ^
+[1minserction_in_array.c:5:25: [2mnote:[0m Assignment 'size=sizeof(arr)/sizeof(arr[0])', assigned value is 9
+    int size=sizeof(arr)/sizeof(arr[0]);
+                        ^
+[1minserction_in_array.c:22:9: [2mnote:[0m size is incremented', new value is 10
+        size++;
+        ^
+[1minserction_in_array.c:25:18: [2mnote:[0m Assuming that condition 'i<size' is not redundant
+    for(int i=0;i<size;i++)
+                 ^
+[1minserction_in_array.c:27:25: [2mnote:[0m Array index out of bounds
+        printf("%d ",arr[i]);
+                        ^
+[1minserction_in_array.c:10:16: [31mstyle:[39m Condition 'position>size' is always false [knownConditionTrueFalse][0m
+    if(position>size)
+               ^
+[1minserction_in_array.c:6:18: [2mnote:[0m Assignment 'position=8', assigned value is 8
+    int position=8;
+                 ^
+[1minserction_in_array.c:10:16: [2mnote:[0m Condition 'position>size' is always false
+    if(position>size)
+               ^
+[1minserction_in_array.c:7:9: [31mstyle:[39m The scope of the variable 'value' can be reduced. [variableScope][0m
+    int value=9;
+        ^
+[1mlinked_list_shell.c:31:13: [31mwarning:[39m sscanf() without field width limits can crash with huge input data. [invalidscanf][0m
+        if (sscanf(input, "%s", command) != 1)
+            ^
+[1mnested_structure.c:20:5: [31mwarning:[39m scanf() without field width limits can crash with huge input data. [invalidscanf][0m
+    scanf(" %[^\n]", emp.name);
+    ^
+[1mnested_structure.c:27:5: [31mwarning:[39m scanf() without field width limits can crash with huge input data. [invalidscanf][0m
+    scanf(" %[^\n]", emp.addr.city);
+    ^
+[1mnumber_of_bits_in_given_number.c:12:33: [31mwarning:[39m Uninitialized variable: count [uninitvar][0m
+    int off_count=8*sizeof(int)-count;
+                                ^
+[1mnumber_of_bits_in_given_number.c:7:11: [2mnote:[0m Assuming condition is false
+    while(x)
+          ^
+[1mnumber_of_bits_in_given_number.c:12:33: [2mnote:[0m Uninitialized variable: count
+    int off_count=8*sizeof(int)-count;
+                                ^
+[1mnumber_of_bits_in_given_number.c:9:9: [31merror:[39m Uninitialized variable: count [legacyUninitvar][0m
+        count++;
+        ^
+[1mpointer_inside_structure.c:20:5: [31mwarning:[39m scanf() without field width limits can crash with huge input data. [invalidscanf][0m
+    scanf(" %[^\n]", s1.name);
+    ^
+[1mpointers.c:9:19: [31merror:[39m Uninitialized variable: *ptr [uninitvar][0m
+    printf("%d\n",*ptr);
+                  ^
+[1mpointers.c:6:9: [31mstyle:[39m Variable 'x' is not assigned a value. [unassignedVariable][0m
+    int x;
+        ^
+[1mstring_input.c:6:5: [31mwarning:[39m scanf() without field width limits can crash with huge input data. [invalidscanf][0m
+    scanf("%[^\n]", str); // Read string until newline
+    ^
+[1mstring_reverse_and_reverse_the_string_which_is_reversed.c:42:2: [31mwarning:[39m scanf() without field width limits can crash with huge input data. [invalidscanf][0m
+ scanf("%[^\n]s",str);
+ ^
+[1mstrings.txt.c:380:15: [31merror:[39m syntax error [syntaxError][0m
+will return 0 if both strings are equal
+              ^
+[1mstructure_array_pointer.c:4:9: [31mstyle:[39m struct member 'struct_pointer_arra_of_structure::roll_NO' is never used. [unusedStructMember][0m
+    int roll_NO;
+        ^
+[1mstructure_array_pointer.c:5:10: [31mstyle:[39m struct member 'struct_pointer_arra_of_structure::Name' is never used. [unusedStructMember][0m
+    char Name[100];
+         ^
+[1mstructure_pointer.c:25:5: [31mwarning:[39m scanf() without field width limits can crash with huge input data. [invalidscanf][0m
+    scanf(" %[^\n]",ptr->employer_id);
+    ^
+[1mstructure_pointer.c:27:5: [31mwarning:[39m scanf() without field width limits can crash with huge input data. [invalidscanf][0m
+    scanf(" %[^\n]",ptr->employer_name);
+    ^
+[1mstructure_pointer.c:29:5: [31mwarning:[39m scanf() without field width limits can crash with huge input data. [invalidscanf][0m
+    scanf(" %[^\n]",ptr->company_name);
+    ^
+[1mstructure_pointer.c:33:5: [31mwarning:[39m scanf() without field width limits can crash with huge input data. [invalidscanf][0m
+    scanf(" %[^\n]",ptr->employer_role);
+    ^
+[1mstructure_pointer.c:35:5: [31mwarning:[39m scanf() without field width limits can crash with huge input data. [invalidscanf][0m
+    scanf(" %[^\n]",ptr->employer_domain);
+    ^
+[1mstructure_user_input.c:12:5: [31mwarning:[39m scanf() without field width limits can crash with huge input data. [invalidscanf][0m
+    scanf("%[^\n]s",p1.name);
+    ^
+[1msum_of_array_elements.c:3:22: [31mstyle:[39m Parameter 'arr' can be declared as const array [constParameter][0m
+int sum_of_array(int arr[],int size){
+                     ^
+[1msum_of_n_number.c:20:17: [31mwarning:[39m Uninitialized variable: sum [uninitvar][0m
+    printf("%d",sum);
+                ^
+[1msum_of_n_number.c:15:18: [2mnote:[0m Assuming condition is false
+    for(int i=0;i<=n;i++)
+                 ^
+[1msum_of_n_number.c:20:17: [2mnote:[0m Uninitialized variable: sum
+    printf("%d",sum);
+                ^
+[1msum_of_n_number.c:17:9: [31merror:[39m Uninitialized variable: sum [legacyUninitvar][0m
+        sum+=i;
+        ^
+[1muser_input_data_types.c:18:5: [31mwarning:[39m scanf() without field width limits can crash with huge input data. [invalidscanf][0m
+    scanf("%s",&string);
+    ^
+[1mvalgrind_practice.c:8:19: [31merror:[39m Memory is allocated but not initialized: arr[i] [uninitdata][0m
+        sum += arr[i];  // arr[i] is uninitialized!
+                  ^
+[1mvalgrindp.c:12:5: [31merror:[39m Memory leak: name [memleak][0m
+    return 0;
+    ^
+[1mcircular_single_linked_list_insert_delete.c:33:0: [31mstyle:[39m The function 'delete_at_end' is never used. [unusedFunction][0m
+void delete_at_end(struct node **head) {
+^
+[1mcircular_single_linked_list_insert_delete.c:58:0: [31mstyle:[39m The function 'delete_at_position' is never used. [unusedFunction][0m
+void delete_at_position(struct node **head, int pos) {
+^
+[1mfunction_return_function_pointer.c:3:0: [31mstyle:[39m The function 'square' is never used. [unusedFunction][0m
+int square(int x) {
+^
+[1mnofile:0:0: [31minformation:[39m Cppcheck cannot find all the include files (use --check-config for details) [missingIncludeSystem][0m
+
