@@ -7,10 +7,6 @@ struct emoloyee
     char name[100];
 } e1;
 
-
-
-
-
 int main()
 {
 	printf("enter employe ID :");
