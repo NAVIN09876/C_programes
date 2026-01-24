@@ -16,10 +16,12 @@ int main()
     printf("Enter employee salary: ");
     scanf("%f", &e1.salary);
 
-    printf("Enter name: ");
-    scanf("%s", e1.name);
+    getchar(); // consume leftover newline
 
-    printf("Name = %s\nID = %d\nSalary = %.3f\n",
+    printf("Enter name: ");
+    fgets(e1.name, sizeof(e1.name), stdin);
+
+    printf("Name = %sID = %d\nSalary = %.3f\n",
            e1.name, e1.id, e1.salary);
 
     return 0;
