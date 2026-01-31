@@ -1,67 +1,58 @@
 #include<stdio.h>
 #include<stdlib.h>
-
-struct node {
+struct node{
     int data;
     struct node *next;
 };
-
 int main()
 {
-    struct node *newnode, *head = NULL, *temp = NULL;
     int choice = 1;
-
-    while (choice)
+    struct node *newnode,*head=NULL,*temp= NULL;
+    
+    
+    while(choice)
     {
         newnode = (struct node*)malloc(sizeof(struct node));
-        if (newnode == NULL)
+        printf("Enter data:");
+        scanf("%d",&newnode->data);
+        if (newnode==NULL)
         {
             printf("Memory allocation failed\n");
             return 1;
         }
-
-        printf("Enter data: ");
-        if (scanf("%d", &newnode->data) != 1) {
-            printf("Invalid input. Exiting.\n");
-            free(newnode);
-            break;
-        }
-        newnode->next = NULL;
-
-        if (head == NULL)
-        {
-            head = temp = newnode;
-        }
-        else
-        {
-            temp->next = newnode;
-            temp = newnode;
-        }
-
-        printf("Do you want to extend? Press 1 to continue, 0 to stop: ");
-        if (scanf("%d", &choice) != 1) {
-            printf("Invalid input. Exiting.\n");
-            break;
+        else{
+            if(head==NULL)
+            {
+                head=temp=newnode;
+            }
+            else{
+                temp->next=newnode;
+                temp=newnode;
+            }
+            printf("Press 1 to extend or press 0 to stop:");
+            scanf("%d",&choice);
         }
     }
-
-    printf("Linked List: ");
-    temp = head;
-    while (temp != NULL)
+    temp=head;
+    while(temp!=NULL)
     {
-        printf("%d->", temp->data);
-        temp = temp->next;
+        printf("%d->",temp->data);
+        temp= temp->next;
     }
-    printf("NULL\n");
-
- 
-    temp = head;
-    while (temp != NULL)
+    printf("NULL");
+    
+    //free function
+    
+    temp=head;
+    
+    
+    while(temp!=NULL)
     {
-        struct node *next = temp->next;
+        struct node *nodenext = temp->next;
         free(temp);
-        temp = next;
+        temp=nodenext;
+        
     }
-
-    return 0;
+ // printf("%d",temp->data);
+    
 }
