@@ -138,7 +138,7 @@ struct node* reverse_linked_list(struct node *head)
 
 int main()
 {
-    while(1);
+   
     struct node *temp;
     temp= create_node(1);
     temp=add_node_at_beg(temp,0);
